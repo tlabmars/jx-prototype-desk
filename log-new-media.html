@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <!-- Standard Meta -->
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+        <!-- Site Properties -->
+        <title>JX desk - Media Log :: tlab.mars</title>
+
+        <link rel="stylesheet" type="text/css" href="assets/vendors/semantic/semantic.min.css">
+
+        <style type="text/css">
+            body {
+                background-color: #FFFFFF;
+            }
+            .ui.menu .item img.logo {
+                margin-right: 1.5em;
+            }
+            .main.container {
+                margin-top: 7em;
+            }
+            
+            #form-container {
+                margin-top: 2em;
+
+            }
+            small {line-height:1; }
+
+            .ui.footer.segment {
+                margin: 5em 0em 0em;
+                padding: 5em 0em;
+            }
+           
+
+        </style>
+
+    </head>
+    <body>
+
+        <div class="ui fixed inverted menu">
+            <div class="ui container">
+                <a href="index.html" class="header item">JX DESK</a>
+                
+                <a href="media-log.html" class="item">Media Log</a>
+                <div class="right menu">
+                    <div class="item">
+                        <a class="ui tiny orange labeled icon disabled button">
+                            <i class="write icon"></i> Logger un média</a>
+                    </div>
+                </div>
+                <!-- More Menu items 
+                <div class="ui simple dropdown item">
+                    Dropdown <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <a class="item" href="#">Link Item</a>
+                        <a class="item" href="#">Link Item</a>
+                        <div class="divider"></div>
+                        <div class="header">Header Item</div>
+                        <div class="item">
+                            <i class="dropdown icon"></i>
+                            Sub Menu
+                            <div class="menu">
+                                <a class="item" href="#">Link Item</a>
+                                <a class="item" href="#">Link Item</a>
+                            </div>
+                        </div>
+                        <a class="item" href="#">Link Item</a>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+        <div class="ui main container">
+            <div class="ui huge header">Logger un média :: [Team name]</div>
+            <div class="ui divider"></div>
+            <p>À ce stade, vous allez référencer les médias qui vont composer l'expérience, c'est à dire les décrire et documenter les événements qui déclenchent leur lecture au cours de l'expérience. Vidéos et fichiers audio doivent être hébergés ailleurs, images de référence et textes peuvent être intégrés à la base de données.</p>
+        
+            <div id="form-container" class="ui grid">
+               <div class="twelve wide column">
+                   <div class="ui raised segment">
+                        <div class="ui form"> 
+                          <h3 class="ui dividing header">Média</h3>
+                          <p>Quel format ? Quelle récit ?</p>
+                          <p></p>
+                                    
+                          <div class="required inline twelve wide fields">
+                              <label for="mediatype">Type :</label>
+                              <div class="field">
+                                  <div class="ui radio checkbox">
+                                      <input type="radio" name="mediatype" checked="" tabindex="0" class="hidden">
+                                      <label>Vidéo</label>
+                                  </div>
+                              </div>
+                              <div class="field">
+                                  <div class="ui radio checkbox">
+                                      <input type="radio" name="mediatype" tabindex="0" class="hidden">
+                                      <label>Son</label>
+                                  </div>
+                              </div>
+                              <div class="field">
+                                  <div class="ui radio checkbox">
+                                      <input type="radio" name="mediatype" tabindex="0" class="hidden">
+                                      <label>Image</label>
+                                  </div>
+                              </div>
+                              <div class="field">
+                                  <div class="ui radio checkbox">
+                                      <input type="radio" name="mediatype" tabindex="0" class="hidden">
+                                      <label>Récit</label>
+                                  </div>
+                              </div>
+                          </div>
+
+                          <div class="required six wide field">
+                              <label>Titre</label>
+                              <input type="text" placeholder="Un titre court et parlant">
+                          </div>
+                          <div class="twelve wide field">
+                              <label>Récit</label>
+                              <textarea></textarea>
+                              <small>Votre média est un texte : intégrez-le à vos données. C'est une vidéo, une image, un son, racontez.</small>
+                          </div>
+                          
+                          <h3 class="ui dividing header">Déclencheurs</h3>
+                            <p>Quels événements déclenchent la lecture de ce média ?</p>
+                          <p></p>
+                          
+                          <div style="position: relative;">
+                              <div class="ui three column relaxed grid">
+                                  <div class="column">
+                                      <p class="center aligned medium header"><strong>LOCALISATION</strong></p>
+                                      <p style="font-size:90%;">La position de l'utilisateur par rapport à un point de référence invoque le média.</p>
+                                      <div class="field">
+                                          <label>Latitude du point de référence</label>
+                                          <input type="text" placeholder="XX,XXXXX">
+                                          <p></p>
+                                      </div>
+                                      <div class="field">
+                                          <label>Longitude du point de référence</label>
+                                          <input type="text" placeholder="X,XXXXX">
+                                          <p></p>
+                                      </div>
+                                      <div class="field">
+                                          <label>Portée</label>
+                                          <input type="text" placeholder="XX mètres">
+                                          <small>Distance maximum en mètres</small>
+                                          <p></p>                
+                                        
+                                      </div>
+                                  </div>
+                                  <div class="ui vertical divider">
+                                      OU
+                                  </div>
+                                  <div class="column">
+                                      <p class="center aligned medium header"><strong>IMAGE DE RÉFÉRENCE</strong></p>
+                                      <p style="font-size:90%;">La reconnaissance d'une image de référence invoque le contenu.</p>
+                                      <p class="small header"><strong>Uploader l'image de référence</strong></p>
+                                      <button class="ui labeled icon button">
+                                          <i class="cloud upload icon"></i>
+                                          Upload
+                                      </button>
+                                  </div>
+                                  <div class="ui vertical divider">
+                                      OU
+                                  </div>
+                                  <div class="column">
+                                      <p class="center aligned medium header"><strong>MOT-CLÉ</strong></p>
+                                      <p style="font-size:90%;">La saisie d'un mot découvert in situ invoque le contenu.</p>
+                                      <div class="field">
+                                          <label>Mot-clé</label>
+                                          <input type="text" placeholder="Un mot clé unique">
+                                          <small>Veillez à ce que votre mot-clé n'ait pas déjà été utilisé.</small>
+                                          <p></p>                
+
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          
+
+                      </div>
+                        
+                   </div>
+                   <div class="center aligned" style="margin-top:2em;">
+                       <div class="ui right floated big black button">LOGGER</div>
+                       <div class="ui big button">Annuler</div>
+                       <div class="ui big button">Effacer</div>
+
+                   </div>
+                       
+               </div>
+                <div class="four wide column"> 
+                    <div class="ui message">
+                        <div class="header">
+                            En bref
+                        </div>
+                        <p><br /><strong>Vidéos et fichiers audios</strong> doivent être hébergés sur <a href="http://youtube.com" target="_blank">YouTube</a> ou <a href="http://soundcloud.com" target="_blank">Soundcloud</a>. <strong>Images de référénce</strong> et <strong>textes</strong> doivent être intégrés à la base de données.</p>
+                        <p><strong>Les données que vous loggez seront utilisées</strong> dans votre création.</p>
+
+                        <p class="ui medium header">C'EST PARTI !</p>
+                    </div>
+                </div>
+            </div><!-- Fin grid -->
+
+             
+        </div><!-- Fin main container -->
+        <div class="ui inverted vertical footer segment">
+            <div class="ui center aligned container">
+                <button class="ui big orange button">
+                    <i class="bug icon"></i>
+                    Signaler un bug        
+                </button>
+                <button class="ui big inverted button">
+                    <i class="github alternate icon"></i>
+                    Suivre sur Github      
+                </button>
+            </div>
+        </div><!-- Fin footer -->
+    </body>
+
+</html>

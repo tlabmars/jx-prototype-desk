@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Standard Meta -->
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+        <!-- Site Properties -->
+        <title>JX Desk - Login - tlab.mars</title>
+        <link rel="stylesheet" type="text/css" href="assets/vendors/semantic/semantic.min.css">
+
+        <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+        <script src="assets/vendors/semantic/semantic.min.js"></script>
+
+        <style type="text/css">
+
+            body > .grid {
+                height: 100%;
+            }
+            .image {
+                margin-top: -100px;
+            }
+            .column {
+                max-width: 450px;
+            }
+        </style>
+        
+    <!-- Login form validation     
+     <script>
+            $(document)
+                .ready(function() {
+                $('.ui.form')
+                    .form({
+                    fields: {
+                        
+                        password: {
+                            identifier  : 'password',
+                            rules: [
+                                {
+                                    type   : 'empty',
+                                    prompt : 'Please enter your password'
+                                },
+                                {
+                                    type   : 'length[6]',
+                                    prompt : 'Your password must be at least 6 characters'
+                                }
+                            ]
+                        }
+                    }
+                });
+            });
+</script> -->
+
+        
+    </head>
+    <body>
+
+        <div class="ui middle aligned center aligned grid">
+            <div class="column">
+                <h1 class="ui center aligned icon header">
+                    <i class="dashboard icon"></i>
+                    JX DESK
+                </h1>
+                <form class="ui large form">               
+                    
+                        <div class="field">
+                            <!-- alternate dropdown KO 
+                               
+                            <div class="ui selection dropdown">                                
+                                <input type="hidden" name="team">
+                                <i class="dropdown icon"></i>
+                                <div class="default text">Pick your team</div>
+                               
+                                 <div  class="menu">
+                                     <div class="item" data-value="1">
+                                         <img class="ui mini avatar image" src="assets/img/lion-500x500.png">
+                                         Uno
+                                     </div>
+                                     <div class="item" data-value="2">
+                                         <img class="ui mini avatar image" src="assets/img/owl-500x500.png">
+                                         Zwei
+                                     </div>
+                                     <div class="item" data-value="3">
+                                         <img class="ui mini avatar image" src="assets/img/monkey-500x500.png">
+                                         Trois
+                                     </div>                                     
+                                </div>
+                            </div> -->
+                            <select name="team"  class="ui fluid dropdown">
+                                <option value="">Pick your team</option>
+                                <option value="1">Uno</option>
+                                <option value="2">Zwei</option>
+                                <option value="3">Trois</option>                                
+                            </select>
+                        </div>             
+                        
+                        
+                    <!-- Login form option       
+                    <div class="field">
+                            <div class="ui left icon input">
+                                <i class="lock icon"></i>
+                                <input type="password" name="password" placeholder="Password">
+                            </div>
+                        </div> 
+                        
+                    <div class="ui large black submit button">Login</div> -->
+                       
+                    <!-- Alternate option for direct access without password to Upload / Browse -->   
+                    <div class="ui buttons">
+                        <a href="media-log.html" class="ui large button">
+                            <i class="unhide icon"></i>
+                            Browse log       
+                            </a>
+                         <!-- Replace <a> demo workaround by this option                          
+                            <button id="browse-button" class="ui large button">
+                                <i class="unhide icon"></i>
+                                Browse log       
+                            </button> -->
+                          <div class="or"></div>
+                          
+                        <a href="log-new-media.html" class="ui large black button">
+                            <i class="write icon"></i>
+                            Log new media
+                        </a>
+                           
+                        <!-- Replace <a> demo workaround by this option                      
+                        <button id="log-button" class="ui large black button" type="submit">
+                            <i class="write icon"></i>
+                            New log                            
+                        </button> -->
+                    </div> 
+
+                    <div class="ui error message"></div>
+
+                </form>
+
+                <!-- Login form forgot password
+                   
+                <div class="ui message">
+                    Forgot your password? <a href="#">Get in touch</a>
+                </div> -->
+            </div>
+        </div>  
+
+    </body>
+
+</html>

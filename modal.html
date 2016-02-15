@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Standard Meta -->
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+        <!-- Site Properties -->
+        <title>JX Desk - Login - tlab.mars</title>
+        <link rel="stylesheet" type="text/css" href="assets/vendors/semantic/semantic.min.css">
+        
+        <style>
+            #log-modal { min-height: 50%;}
+            .column {padding:1em;}
+        </style>
+
+        <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+        <script src="assets/vendors/semantic/semantic.min.js"></script>
+        <script>
+            $(document)
+                .ready(function() {
+                $('#log-modal').modal('show');
+            });
+        
+        </script>
+
+    </head>
+    <body>
+        <div id="log-modal" class="ui modal">
+            <i class="close icon"></i>
+
+
+            <div class="header">
+                [Team Name] :: Log medias 
+            </div>
+
+            <div class="column">
+                <div class="ui small form">
+                    
+                    <div class="ui message">
+                        <p>Logging your medias means defining elements which will trigger them within your app.</p>
+                        <p>Triggers can be GPS coordinates and / or keywords.</p> 
+                        <p>You can upload images and enter text, but you have to enter a YouTube, Vimeo... URL for videos.</p>
+                    </div>
+
+                    <div class="three fields">
+                        <div class="disabled field">
+                            <label>Team</label>
+                            <input placeholder="[Team name]" disabled="" type="text">
+                        </div>
+                        <div class="disabled field">
+                            <label>Media ID</label>
+                            <input placeholder="XXXXXX" disabled="" type="text">
+                        </div>
+                    </div>
+                    
+                    <h4 class="ui dividing header">Medias</h4>
+                    
+                    
+                    <div class="fields">
+                        <div class="disabled field">
+                            <label>Team</label>
+                            <input placeholder="[Team name]" disabled="" type="text">
+                        </div>
+                        <div class="disabled field">
+                            <label>Media ID</label>
+                            <input placeholder="XXXXXX" disabled="" type="text">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+                
+            <div class="actions">
+                <div class="ui black deny button">
+                    Nope
+                </div>
+                <div class="ui positive right labeled icon button">
+                    Yep, that's me
+                    <i class="checkmark icon"></i>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
