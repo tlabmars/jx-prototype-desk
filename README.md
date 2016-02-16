@@ -6,7 +6,7 @@ Le principe est de créer une base de données (MySQL a priori) pouvant être ac
 
 Le développement de la partie back-end est à venir.
 
-Pour le front-end, c'est aussi l'occasion de tester différents frameworks. Ici Semantic UI, à suivre [Gumby](https://github.com/GumbyFramework/Gumby) et [Pure](https://github.com/yahoo/pure) (et donc une philosophie très différente).
+Pour le front-end, c'est aussi l'occasion de tester différents frameworks. Ici Semantic UI, à suivre [Pure](https://github.com/yahoo/pure) (et donc une philosophie assez différente).
 
 Dans la continuité de la démarche d'atelier et d'expérimentation du projet [Joliette conneXions (JX)](https://github.com/tlabmars/joliette-connexions).
 
